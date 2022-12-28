@@ -14,11 +14,11 @@ public class HomeWork5 {
         int warriorCount = 860;
         double coefficient = 1.5;
 
-        int allLee = (warriorLee + archerLee + riderLee) * warriorCount;
-        int allMinh = (int) ((warriorMinh + archerMinh + riderMinh) * warriorCount * coefficient);
+        int allAttacksArmyLee = (warriorLee + archerLee + riderLee) * warriorCount;
+        int allAttacksArmyMinh = (int) ((warriorMinh + archerMinh + riderMinh) * warriorCount * coefficient);
 
-        System.out.println("Загальні атаки армії Лі - " + allLee);
+        System.out.println("Загальні атаки армії Лі - " + allAttacksArmyLee);
         System.out.println();
-        System.out.println("Загальні атаки армії Мін - " + allMinh);
+        System.out.println("Загальні атаки армії Мін - " + allAttacksArmyMinh);
     }
 }
