@@ -146,16 +146,126 @@ public class Main {
         System.out.println(b3--); //9
         System.out.println(b3--); //8
         System.out.println(b3--); //7
+        System.out.println(b3);
 
         int a4 = 10;
         int b4 = 3;
+
+        System.out.println("a4 = " + a4);
+        System.out.println("b4 = " +b4);
+
         System.out.println(--a4 + (a4++ + --b4) + b4--); // 9 + (9 +2) + 2 = 22 - операції йдуть почергово, а при розрахунку йде за математичним пріоритетом (спочатку в дужках...)
 
+        System.out.println("a4 = " + a4);
+        System.out.println("b4 = " +b4);
 
         // Операції з класу Math. https://docs.oracle.com/javase/8/docs/api/java/lang/Math.html
 
+        System.out.println(Math.PI);
+        System.out.println(Math.E);
+
+        System.out.println((int) 10.7);
+        System.out.println(Math.round(10.45)); // 10
+        System.out.println(Math.round(10.4)); // 10
+        System.out.println(Math.round(10.6)); //11
+
+        System.out.println(Math.abs(-10)); //10
+        System.out.println(Math.abs(10)); //10
+
+        System.out.println("max = " + Math.max(22, 11));
+
+        System.out.println("min = " + Math.min(22, 11));
+
+        System.out.println("sqrt = " + Math.sqrt(26));
+        System.out.println("піднесення до степення " + (int) Math.pow(3, 2)); // 9
+        System.out.println("піднесення до степення " +  Math.pow(3, 2)); // 9.0
+
+        // від  0.0 до 0.99999999999999999999999999
+        System.out.println("рандомні числа від 0 до 0.9999999999");
+        System.out.println(Math.random());
+        System.out.println(Math.random());
+        System.out.println(Math.random());
+        System.out.println(Math.random());
+        System.out.println(Math.random());
+        System.out.println(Math.random());
+
+        //від 0 до 10
+        // 0.00 * 11 = 0 min
+        // 0.99999 * 11 = 10,9999999 (int) = 10 - max
+        System.out.println("рандомні числа від 0 до 10");
+        System.out.println((int) (Math.random() * 11));
+        System.out.println((int) (Math.random() * 11));
+        System.out.println((int) (Math.random() * 11));
+        System.out.println((int) (Math.random() * 11));
+        System.out.println((int) (Math.random() * 11));
+        System.out.println((int) (Math.random() * 11));
+        System.out.println((int) (Math.random() * 11));
+        System.out.println((int) (Math.random() * 11));
+        System.out.println((int) (Math.random() * 11));
+        System.out.println((int) (Math.random() * 11));
+        System.out.println((int) (Math.random() * 11));
+        System.out.println((int) (Math.random() * 11));
+        System.out.println((int) (Math.random() * 11));
 
 
+        //від 15 до 30
+        // 0.00 * 11 + 15 = 15 min
+        // 0.99999 * 31 = 10,9999999 (int) = 10 - max
+
+        int min = 15;
+        int max = 30;
+        System.out.println("рандомні числа від 15 до 30, розрахунок на яке треба помножити рандом, щоб вийшло від 15 до 30 ");
+        System.out.println(max - min + 1);
+
+        System.out.println("рандомні числа від 15 до 30");
+
+        System.out.println((int) (15 + (Math.random() * 16)));
+        System.out.println((int) (15 + (Math.random() * 16)));
+        System.out.println((int) (15 + (Math.random() * 16)));
+        System.out.println((int) (15 + (Math.random() * 16)));
+        System.out.println((int) (15 + (Math.random() * 16)));
+        System.out.println((int) (15 + (Math.random() * 16)));
+        System.out.println((int) (15 + (Math.random() * 16)));
+        System.out.println((int) (15 + (Math.random() * 16)));
+        System.out.println((int) (15 + (Math.random() * 16)));
+
+        //task1
+//        Дано: зарплати трьох працівників за 1 місяць (a, b, c)
+//        Розрахувати:
+//        1. для кожного працівника суму зарплати за 10 років
+//        2. відняти 5% податок
+//        3. порахувати середнє арифметичне за трьома сумами за 10 років
+//        4. вивести суми зарплат за 10 років з урахуванням вирахування податків та
+//        середнє арифм.
+
+        int a5 = 500;
+        int b5 = 1500;
+        int c5 = 3500;
+
+        int years = 10*12;
+
+        int employeeA5Salary10years = years * a5;
+        int employeeB5Salary10years = years * b5;
+        int employeeC5Salary10years = years * c5;
+
+        System.out.println("Працівник a5 отримає за 10 років " + employeeA5Salary10years + "$");
+        System.out.println("Працівник b5 отримає за 10 років " + employeeB5Salary10years + "$");
+        System.out.println("Працівник c5 отримає за 10 років " + employeeC5Salary10years + "$");
+
+        double withoutTax = 0.95;
+        double employeeA5Salary10yearsWithoutTax = employeeA5Salary10years * withoutTax;
+        double employeeB5Salary10yearsWithoutTax = employeeB5Salary10years * withoutTax;
+        double employeeC5Salary10yearsWithoutTax = employeeC5Salary10years * withoutTax;
+
+        System.out.println("Працівник a5 отримає за 10 років з відрахуванням податків " + employeeA5Salary10yearsWithoutTax + "$");
+        System.out.println("Працівник b5 отримає за 10 років з відрахуванням податків " + employeeB5Salary10yearsWithoutTax + "$");
+        System.out.println("Працівник c5 отримає за 10 років з відрахуванням податків " + employeeC5Salary10yearsWithoutTax + "$");
+
+        double avgWithoutTax = (employeeA5Salary10years + employeeB5Salary10years + employeeC5Salary10years) / 3;
+        double avgWithTax = (employeeA5Salary10yearsWithoutTax + employeeB5Salary10yearsWithoutTax + employeeC5Salary10yearsWithoutTax) / 3;
+
+        System.out.println("Середня арифметична зп працівників за 10 років без відрахування податків " + avgWithoutTax + "$");
+        System.out.println("Середня арифметична зп працівників за 10 років з відрахуванням податків " + avgWithTax + "$");
 
     }
 }
