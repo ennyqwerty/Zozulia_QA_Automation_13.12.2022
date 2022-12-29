@@ -252,17 +252,18 @@ public class Main {
         System.out.println("Працівник b5 отримає за 10 років " + employeeB5Salary10years + "$");
         System.out.println("Працівник c5 отримає за 10 років " + employeeC5Salary10years + "$");
 
-        double withoutTax = 0.95;
-        double employeeA5Salary10yearsWithoutTax = employeeA5Salary10years * withoutTax;
-        double employeeB5Salary10yearsWithoutTax = employeeB5Salary10years * withoutTax;
-        double employeeC5Salary10yearsWithoutTax = employeeC5Salary10years * withoutTax;
+        double withoutTax = 0.05;
+        double employeeA5Salary10yearsWithoutTax = employeeA5Salary10years - (employeeA5Salary10years * withoutTax);
+        double employeeB5Salary10yearsWithoutTax = employeeB5Salary10years - (employeeB5Salary10years * withoutTax);
+        double employeeC5Salary10yearsWithoutTax = employeeC5Salary10years - (employeeC5Salary10years * withoutTax);
 
         System.out.println("Працівник a5 отримає за 10 років з відрахуванням податків " + employeeA5Salary10yearsWithoutTax + "$");
         System.out.println("Працівник b5 отримає за 10 років з відрахуванням податків " + employeeB5Salary10yearsWithoutTax + "$");
         System.out.println("Працівник c5 отримає за 10 років з відрахуванням податків " + employeeC5Salary10yearsWithoutTax + "$");
 
-        double avgWithoutTax = (employeeA5Salary10years + employeeB5Salary10years + employeeC5Salary10years) / 3;
-        double avgWithTax = (employeeA5Salary10yearsWithoutTax + employeeB5Salary10yearsWithoutTax + employeeC5Salary10yearsWithoutTax) / 3;
+        int count = 3;
+        double avgWithoutTax = (employeeA5Salary10years + employeeB5Salary10years + employeeC5Salary10years) / (double) count;
+        double avgWithTax = (employeeA5Salary10yearsWithoutTax + employeeB5Salary10yearsWithoutTax + employeeC5Salary10yearsWithoutTax) / (double) count;
 
         System.out.println("Середня арифметична зп працівників за 10 років без відрахування податків " + avgWithoutTax + "$");
         System.out.println("Середня арифметична зп працівників за 10 років з відрахуванням податків " + avgWithTax + "$");
