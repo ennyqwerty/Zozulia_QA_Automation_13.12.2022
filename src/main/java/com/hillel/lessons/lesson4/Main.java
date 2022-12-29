@@ -3,35 +3,159 @@ package com.hillel.lessons.lesson4;
 public class Main {
     public static void main(String[] args) {
 
-        int a = 5;
-        int b = 10;
+        int a = 10;
+        int b = 3;
 
-//      System.out.println(a + b);
-//        System.out.println(a + b);
-//        System.out.println(a - b);
-//        System.out.println(a * b);
+        // Арифметичні оператори.
+        // Додавання, віднімання, множення, ділення
+        System.out.println(10 + 3); // харкод, краще використовувати змінні
+        System.out.println(a + b);
+        System.out.println(a - b);
+        System.out.println(a * b);
 
-//        System.out.println((double) a /(double) b);
+        System.out.println(a /(double) b);
+        System.out.println((double) a / b);
+        System.out.println((double) a /(double) b);
 
-//        System.out.println( a % b);
 
-        a = a + 5;
+        // Цікавіші арифметичні операції:
+        //Ділення із відкиданням дробової частини
+        System.out.println((double) a); // в консолі буде виводитись 10.0
+        System.out.println((int) 10.45687);  // в консолі буде виводитись 10, залишок просто відкидається
 
-        System.out.println(a);
+        // Залишок від ділення - використовується для визначення парності числа, задопомогою символа %
+        System.out.println(a % b); //3*3=9   10-9=1
 
-        a++;
-        a++;
-        a++;
+        System.out.println(10 % 2); //5*2=10  10-10
+        System.out.println(10 % 3); //3*3=9   10-9=1
+        System.out.println(10 % 4); //2*4=8   10-8=2
+        System.out.println(10 % 5); //0 2*5= 10  10-10=0
+        System.out.println(10 % 6); //4 1*6=6   10-6=4
+        System.out.println(10 % 7); //3
+        System.out.println(10 % 8); //2
+        System.out.println(10 % 9); //1   1*9=9  10-9=1
+        System.out.println(10 % 10); //0  1*10=10   10-10=0
 
-        System.out.println(a);
-
-        a--;
-
-        System.out.println(a);
+        //Скороченні оператори
 
         int c = 10;
+        int d = 3;
 
-        System.out.println(10 + a++);
+        c = c + 5; // 10 +5
+        System.out.println(c);
+        c = c + 5; // 15 +5
+        System.out.println(c);
+        c = c + 5; // 20 +5
+        System.out.println(c);  // довга форма запису, нижче буде описано як записувати сорочено
+
+        System.out.println("Скороченні оператори:");
+
+        d += 5; // += говорить джаві, що ми до змнної d додаємо число 5 і автоматично кладемо у нашу змінну, 3+5=8
+        System.out.println(d);
+
+        d += 5 + 10 * 2; // 8+5+10*2=33, бо в попередньому прикладі ми вже перезаписали значення змінної на 8.
+        System.out.println(d);
+
+        d -= 3; // 33-3=30
+        System.out.println(d);
+
+        d *= 2; // 30*2=60
+        System.out.println(d);
+
+        d /= 6; // 60/6=10
+        System.out.println(d);
+
+
+        //Пріоритет обчислення як в матиматиці
+        System.out.println("Пріоритет:");
+
+        int e = 10;
+        int f = 5;
+
+        System.out.println(e + f * e - f); // 55
+        System.out.println((e + f) * e - f); // 145
+        System.out.println((e + f) * (e - f)); // 75
+
+        //Префіксний та постфіксний інкремент та декремент - використовується в лічильниках для циклів
+
+        int g = 10;
+        int h =3;
+
+        g = g + 1; //найдовша операція
+        System.out.println(g);
+        g += 1; //коротша операція
+        System.out.println(g);
+        System.out.println("постфіксний інкремент g++:");
+        g++;  //найкоротша операція - інкремент
+        System.out.println(g);
+
+        System.out.println("постфіксний декремент h--:");
+        h--;  //найкоротша операція - декремент
+        h--;
+        System.out.println(h);
+
+
+        System.out.println("Постфіксний інкремент j++:");
+        int j =10;
+        int k = 5;
+        System.out.println("before j" + j); // 10
+
+        System.out.println(10 + j++); // 20
+
+        System.out.println("after j" + j); // 11
+
+        //Префіксний інкремент
+        System.out.println("Префіксний інкремент k++:");
+        System.out.println("before k " + k); // 5
+
+        System.out.println(10 + ++k); // 16
+
+        System.out.println("after k " + k); // 6
+
+        int a1 = 10;
+        int b1 = 3;
+
+        System.out.println("a1 = " + a1);
+        System.out.println("b1 = " + b1);
+
+        System.out.println(a1++ + b1++ - a1--); // 10+3-11
+
+        System.out.println("a1 = " + a1);
+        System.out.println("b1 = " + b1);
+
+        int a2 = 10;
+        int b2 = 3;
+
+        System.out.println("a2 = " + a2);
+        System.out.println("b2 = " + b2);
+
+        System.out.println(--a2 + b2++ + ++b2 - a2++); //9+3+5-9
+
+        System.out.println("a2 = " + a2);
+        System.out.println("b2 = " + b2);
+
+        int a3 = 10;
+        int b3 = 10;
+
+        System.out.println(--a3); //9
+        System.out.println(--a3); //8
+        System.out.println(--a3); //7
+        System.out.println(--a3); //6
+
+        System.out.println(b3--); //10
+        System.out.println(b3--); //9
+        System.out.println(b3--); //8
+        System.out.println(b3--); //7
+
+        int a4 = 10;
+        int b4 = 3;
+        System.out.println(--a4 + (a4++ + --b4) + b4--); // 9 + (9 +2) + 2 = 22 - операції йдуть почергово, а при розрахунку йде за математичним пріоритетом (спочатку в дужках...)
+
+
+        // Операції з класу Math. https://docs.oracle.com/javase/8/docs/api/java/lang/Math.html
+
+
+
 
     }
 }
