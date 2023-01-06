@@ -105,7 +105,7 @@ public class Main {
         System.out.println("after j" + j); // 11
 
         //Префіксний інкремент
-        System.out.println("Префіксний інкремент k++:");
+        System.out.println("Префіксний інкремент ++k:");
         System.out.println("before k " + k); // 5
 
         System.out.println(10 + ++k); // 16
