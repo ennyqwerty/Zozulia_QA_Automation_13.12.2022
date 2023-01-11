@@ -14,8 +14,6 @@ public class HomeWork7GuessNumber {
     for (int i = 1; i <= 3; i++) {
       System.out.println("Будь ласка, введіть число від 1 до 10");
 
-
-
       if (scanner.hasNextInt()) {
         setPlayerNumber = scanner.nextInt();
       }
