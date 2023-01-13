@@ -219,7 +219,7 @@ public class Main {
 
         System.out.println("рандомні числа від 15 до 30");
 
-        System.out.println((int) (15 + (Math.random() * 16)));
+        System.out.println((int) (min + (Math.random() * (max - min +1))));
         System.out.println((int) (15 + (Math.random() * 16)));
         System.out.println((int) (15 + (Math.random() * 16)));
         System.out.println((int) (15 + (Math.random() * 16)));
