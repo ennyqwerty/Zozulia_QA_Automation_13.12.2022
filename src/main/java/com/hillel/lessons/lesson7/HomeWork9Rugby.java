@@ -5,11 +5,6 @@ import java.util.Arrays;
 public class HomeWork9Rugby {
     public static void main(String[] args) {
 
-        //Є дві команди регбі з 25 гравців різного віку у кожній.
-        //Вік беремо випадковим чином в діапазоні від 18 до 40.
-        //Виведіть у двох рядках вік гравців кожної команди.
-        //Порахуйте середній вік гравців кожної команди та виведіть на екран.
-
         int count = 25;
         int [] countPlayersTeam1 = new int[count];
         int [] countPlayersTeam2 = new int[count];
