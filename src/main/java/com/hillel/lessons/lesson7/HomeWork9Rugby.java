@@ -27,7 +27,7 @@ public class HomeWork9Rugby {
         double avgTeam2 =  (double) sumTeam2 / count;
 
         System.out.println("Вік гравців 1 команди " + Arrays.toString(countPlayersTeam1));
-        System.out.println("вік гравців 2 команди " + Arrays.toString(countPlayersTeam2));
+        System.out.println("Вік гравців 2 команди " + Arrays.toString(countPlayersTeam2));
 
         System.out.println("Середній вік гравців 1 команди = " + avgTeam1);
         System.out.println("Середній вік гравців 2 команди = " + avgTeam2);
