@@ -15,7 +15,7 @@ public class HomeWork11Person {
     public static void main(String[] args) {
         System.out.println(personInfo("Will", " Smith", "New York", 2936729462846L));
         System.out.println(personInfo("Jackie", " Chan", "Shanghai", 12312412412L));
-        System.out.println(personInfo("Sherlock", "Holmes", "London", 37742123513L));
+        System.out.println(personInfo("Sherlock", " Holmes", "London", 37742123513L));
     }
 
     static String personInfo(String name, String lastname, String town, long phone) {
