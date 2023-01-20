@@ -13,12 +13,12 @@ public class HomeWork11Person {
     //    Зателефонувати до громадян Sherlock Holmes з міста London можна за номером 37742123513.
 
     public static void main(String[] args) {
-
+        System.out.println(personInfo("Will", " Smith", "New York", "2936729462846"));
+        System.out.println(personInfo("Jackie", " Chan", "Shanghai", "12312412412"));
+        System.out.println(personInfo("Sherlock", "Holmes", "London", "37742123513"));
     }
 
-    static void personInfo(String name, String lastname, String town, long phone) {
-        System.out.println("Зателефонувати громадянинові " + name + lastname + " з міста " + town + " можна за номером " + phone);
-
+    static String personInfo(String name, String lastname, String town, String phone) {
+        return "Зателефонувати громадянинові " + name + lastname + " з міста " + town + " можна за номером " + phone;
     }
-
 }
