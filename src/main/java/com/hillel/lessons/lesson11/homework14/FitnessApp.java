@@ -2,7 +2,7 @@ package com.hillel.lessons.lesson11.homework14;
 
 public class FitnessApp {
 
-    final private  String name;
+    private final String name;
     final private  int dayBirthday;
     final private int monthBirthday;
     final private  int yearBirthday;
@@ -90,16 +90,16 @@ public class FitnessApp {
     public String toString() {
         return "Юзер " +
                 "name='" + name + '\'' +
+                ", lastname='" + lastname + '\'' +
                 ", dayBirthday=" + dayBirthday +
                 ", monthBirthday=" + monthBirthday +
                 ", yearBirthday=" + yearBirthday +
+                ", age=" + age +
                 ", email='" + email + '\'' +
                 ", phoneNumber=" + phoneNumber +
-                ", lastname='" + lastname + '\'' +
                 ", weight=" + weight +
                 ", pressure=" + pressure +
-                ", countSteps=" + countSteps +
-                ", age=" + age;
+                ", countSteps=" + countSteps;
     }
 
 }
