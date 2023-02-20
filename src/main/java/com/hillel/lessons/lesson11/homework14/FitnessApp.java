@@ -11,6 +11,10 @@ public class FitnessApp {
 
     private String lastname;
     private double weight;
+    private int pressure;
+    private int countSteps;
+    private int age;
+    private  int year = 2023;
 
     public void setLastname(String lastname) {
         this.lastname = lastname;
@@ -27,11 +31,6 @@ public class FitnessApp {
     public void setCountSteps(int countSteps) {
         this.countSteps = countSteps;
     }
-
-    private int pressure;
-    private int countSteps;
-    private int age;
-    private  int year = 2023;
 
     public FitnessApp(String name, int dayBirthday, int monthBirthday, int yearBirthday,
                       String email, long phoneNumber, String lastname, double weight,
@@ -76,8 +75,6 @@ public class FitnessApp {
     public long getPhoneNumber() {
         return phoneNumber;
     }
-
-
 
 
     public void printAccountInfo() {
