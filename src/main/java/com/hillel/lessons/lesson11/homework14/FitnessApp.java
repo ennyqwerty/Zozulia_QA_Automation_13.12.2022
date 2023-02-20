@@ -2,18 +2,34 @@ package com.hillel.lessons.lesson11.homework14;
 
 public class FitnessApp {
 
-    private  String name;
-    private  int dayBirthday;
-    private int monthBirthday;
-    private  int yearBirthday;
-    private String email;
-    private long phoneNumber;
+    final private  String name;
+    final private  int dayBirthday;
+    final private int monthBirthday;
+    final private  int yearBirthday;
+    final private String email;
+    final private long phoneNumber;
 
-    String lastname;
-    double weight;
+    private String lastname;
+    private double weight;
 
-    int pressure;
-    int countSteps;
+    public void setLastname(String lastname) {
+        this.lastname = lastname;
+    }
+
+    public void setWeight(double weight) {
+        this.weight = weight;
+    }
+
+    public void setPressure(int pressure) {
+        this.pressure = pressure;
+    }
+
+    public void setCountSteps(int countSteps) {
+        this.countSteps = countSteps;
+    }
+
+    private int pressure;
+    private int countSteps;
     private int age;
     private  int year = 2023;
 
@@ -61,29 +77,8 @@ public class FitnessApp {
         return phoneNumber;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
 
-    public void setDayBirthday(int dayBirthday) {
-        this.dayBirthday = dayBirthday;
-    }
 
-    public void setMonthBirthday(int monthBirthday) {
-        this.monthBirthday = monthBirthday;
-    }
-
-    public void setYearBirthday(int yearBirthday) {
-        this.yearBirthday = yearBirthday;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    public void setPhoneNumber(long phoneNumber) {
-        this.phoneNumber = phoneNumber;
-    }
 
     public void printAccountInfo() {
         System.out.println("Користувач: "+ getName() + " " + lastname + ". День народження " + getDayBirthday() + "." + getMonthBirthday()
@@ -93,7 +88,6 @@ public class FitnessApp {
 
     @Override
     public String toString() {
-        //Виправлено руками, щоб було зрозуміло в мейн
         return "Юзер " +
                 "name='" + name + '\'' +
                 ", dayBirthday=" + dayBirthday +
@@ -105,8 +99,7 @@ public class FitnessApp {
                 ", weight=" + weight +
                 ", pressure=" + pressure +
                 ", countSteps=" + countSteps +
-                ", age=" + age +
-                ", year=" + year;
+                ", age=" + age;
     }
 
 }

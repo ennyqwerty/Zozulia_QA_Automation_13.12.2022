@@ -38,18 +38,17 @@ public class Main {
                 89,80,8200,  2023);
         user3.printAccountInfo();
         System.out.println();
+        System.out.println();
 
-        user1.setName("Anna");
-        user1.setEmail("anna.zozulya01@gmail.com");
+        user1.setWeight(45.5);
+        user1.setCountSteps(5000);
         System.out.println(user1);
         System.out.println();
 
 
-        user2.setEmail("anna.zozulya02@gmail.com");
-        user2.setPhoneNumber(14176668888L);
-        user2.setDayBirthday(01);
-        user2.setMonthBirthday(02);
-        user2.setYearBirthday(1999);
+        user2.setLastname("Lastname");
+        user2.setCountSteps(10000);
+        user2.setPressure(88);
         System.out.println(user2);
         System.out.println();
     }
