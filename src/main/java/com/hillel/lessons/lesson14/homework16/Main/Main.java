@@ -1,4 +1,4 @@
-package com.hillel.lessons.lesson14.main;
+package com.hillel.lessons.lesson14.homework16.Main;
 
 import com.hillel.lessons.lesson14.homework16.autoshop.Bike;
 import com.hillel.lessons.lesson14.homework16.autoshop.Bus;
@@ -7,6 +7,7 @@ import com.hillel.lessons.lesson14.homework16.autoshop.ElektroCar;
 import com.hillel.lessons.lesson14.homework16.enams.ColorItems;
 
 public class Main {
+
     public static void main(String[] args) {
 
         Car car = new Car(2000,"Tiguan","Volkswagen", 2022, "Germany",190,"позашляховик",5,
@@ -16,7 +17,7 @@ public class Main {
         System.out.println();
 
         ElektroCar elektroCar = new ElektroCar(1500,"Leaf", "Nissan", 2015,"Japan",150,"лімузин",5,
-        ColorItems.GREEN);
+                ColorItems.GREEN);
         elektroCar.electricity();
         System.out.println(elektroCar);
         System.out.println();
