@@ -3,11 +3,11 @@ package com.hillel.lessons.lesson11.homework14;
 public class FitnessApp {
 
     private final String name;
-    final private  int dayBirthday;
-    final private int monthBirthday;
-    final private  int yearBirthday;
-    final private String email;
-    final private long phoneNumber;
+    private final int dayBirthday;
+    private final int monthBirthday;
+    private final int yearBirthday;
+    private final String email;
+    private final long phoneNumber;
 
     private String lastname;
     private double weight;
