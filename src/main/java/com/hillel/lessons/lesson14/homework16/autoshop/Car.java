@@ -4,7 +4,7 @@ import com.hillel.lessons.lesson14.homework16.abstractions.Items;
 import com.hillel.lessons.lesson14.homework16.enams.ColorItems;
 
 public class Car extends Items {
-    private  String type;
+    private String type;
     private int numberOfDoors;
 
     private ColorItems color;
@@ -19,14 +19,14 @@ public class Car extends Items {
 
     @Override
     public String getDescription() {
-        return "Car: " + " ціна - " + getPrice() +"$" + ", виробник - " + getMakes() + ", країна виробник - " + getMadeCountry()
+        return "Car: " + " ціна - " + getPrice() + "$" + ", виробник - " + getMakes() + ", країна виробник - " + getMadeCountry()
                 + ", тип - " + type + ", кількість дверей - " + numberOfDoors + ", колір - " + color.getColor()
                 + ", рік випуску - " + getYears();
     }
 
     @Override
     public String toString() {
-        return "Car: " + " ціна - " + getPrice() +"$" + ", модель - " + getModel() + ", виробник - " + getMakes() + ", країна виробник - " + getMadeCountry()
+        return "Car: " + " ціна - " + getPrice() + "$" + ", модель - " + getModel() + ", виробник - " + getMakes() + ", країна виробник - " + getMadeCountry()
                 + ", максимальна швидкість - " + getMaxSpeed() + ", тип - " + type + ", кількість дверей - " + numberOfDoors + ", колір - " + color.getColor()
                 + ", рік випуску - " + getYears();
     }

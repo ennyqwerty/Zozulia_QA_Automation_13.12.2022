@@ -1,5 +1,5 @@
 package com.hillel.lessons.lesson14.homework16.interfaces;
 
-public interface FuelEleсtricity {
+public interface FuelElectricity {
     void electricity();
 }

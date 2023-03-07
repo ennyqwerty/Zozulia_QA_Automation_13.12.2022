@@ -17,7 +17,7 @@ public abstract class Items {
         this.makes = makes;
         this.years = years;
         this.madeCountry = madeCountry;
-        setMaxSpeed(maxSpeed);;
+        setMaxSpeed(maxSpeed);
     }
 
     public double getPrice() {
@@ -52,5 +52,6 @@ public abstract class Items {
             System.out.println("Швидкість менше  0");
         }
     }
+
     protected abstract Object getDescription();
 }
