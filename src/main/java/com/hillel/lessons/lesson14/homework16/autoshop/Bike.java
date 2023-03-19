@@ -1,9 +1,8 @@
 package com.hillel.lessons.lesson14.homework16.autoshop;
 
 import com.hillel.lessons.lesson14.homework16.abstractions.Items;
-import com.hillel.lessons.lesson14.homework16.interfaces.FuelElectricity;
 
-public final class Bike extends Items implements FuelElectricity {
+public final class Bike extends Items {
     private String bikeType;
 
     public Bike(double price, String model, String makes, int years, String madeCountry, int maxSpeed, String bikeType) {

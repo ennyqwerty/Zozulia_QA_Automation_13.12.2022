@@ -7,8 +7,8 @@ public class Whiskey extends BottleProduct {
     private int years;
     private  String type;
 
-    public Whiskey(int volume, String design, String manufacturer, double grade, int years, String type) {
-        super(volume, design, manufacturer, grade);
+    public Whiskey(String productName, int volume, String design, String manufacturer, double grade, int years, String type) {
+        super(productName, volume, design, manufacturer, grade);
         this.years = years;
         this.type = type;
     }
@@ -23,6 +23,6 @@ public class Whiskey extends BottleProduct {
 
     @Override
     public String getDescription() {
-        return "Whiskey: " + getDesign() + " , with type: " + type + getGrade();
+        return "Whiskey: " + getDesign() + " , with type: " + type + ", градуси " + getGrade();
     }
 }

@@ -5,8 +5,8 @@ import com.hillel.lessons.lesson12.interfaces.Bubbling;
 
 public class Schampu extends Wine implements Bubbling {
 
-    public Schampu(int volume, String design, String manufacturer, double grade, ColorOfWine color) {
-        super(volume, design, manufacturer, grade, color);
+    public Schampu(String productName, int volume, String design, String manufacturer, double grade, ColorOfWine color) {
+        super(productName, volume, design, manufacturer, grade, color);
     }
 
 

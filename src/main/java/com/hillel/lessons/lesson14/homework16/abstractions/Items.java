@@ -1,6 +1,8 @@
 package com.hillel.lessons.lesson14.homework16.abstractions;
 
-public abstract class Items {
+import com.hillel.lessons.lesson14.homework16.interfaces.FuelElectricity;
+
+public abstract class Items implements FuelElectricity {
     private double price;
     private String model;
 

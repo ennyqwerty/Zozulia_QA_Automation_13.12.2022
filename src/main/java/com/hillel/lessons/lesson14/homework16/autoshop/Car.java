@@ -30,4 +30,9 @@ public class Car extends Items {
                 + ", максимальна швидкість - " + getMaxSpeed() + ", тип - " + type + ", кількість дверей - " + numberOfDoors + ", колір - " + color.getColor()
                 + ", рік випуску - " + getYears();
     }
+
+    @Override
+    public void electricity() {
+
+    }
 }

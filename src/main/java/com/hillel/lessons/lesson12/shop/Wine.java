@@ -7,8 +7,8 @@ public class Wine extends BottleProduct {
 
     private ColorOfWine color;
 
-    public Wine(int volume, String design, String manufacturer, double grade, ColorOfWine color) {
-        super(volume, design, manufacturer, grade);
+    public Wine(String productName, int volume, String design, String manufacturer, double grade, ColorOfWine color) {
+        super(productName, volume, design, manufacturer, grade);
         this.color = color;
     }
 
@@ -17,8 +17,8 @@ public class Wine extends BottleProduct {
         return "Wine: " + getDesign() + " , with color: " + color.getColor();
     }
 
-    public Wine(int volume, String design, String manufacturer, double grade) {
-        super(volume, design, manufacturer, grade);
+    public Wine(String productName, int volume, String design, String manufacturer, double grade) {
+        super(productName, volume, design, manufacturer, grade);
     }
 
     @Override
@@ -48,7 +48,7 @@ public class Wine extends BottleProduct {
                 ", design='" + getDesign() + '\'' +
                 ", manufacturer='" + getManufacturer() + '\'' +
                 ", grade=" + getGrade() +
-                ", color=" + color.toString() +
+                ", color=" + color.getColor() +
                 '}';
     }
 }

@@ -1,17 +1,26 @@
 package com.hillel.lessons.lesson12.abstractions;
 
 public abstract class BottleProduct {
-
+    private String productName;
     private int volume;
     private  String design;
     private String manufacturer;
     private double grade;
 
-    public BottleProduct(int volume, String design, String manufacturer, double grade) {
+    public BottleProduct(String productName, int volume, String design, String manufacturer, double grade) {
+        this.productName = productName;
         this.volume = volume;
         this.design = design;
         this.manufacturer = manufacturer;
         setGrade(grade);
+    }
+
+    public String getProductName() {
+        return productName;
+    }
+
+    public void setProductName(String productName) {
+        this.productName = productName;
     }
 
     public int getVolume() {
@@ -30,7 +39,7 @@ public abstract class BottleProduct {
             return grade;
     }
 
-    protected abstract Object getDescription();
+    public abstract Object getDescription();
 
     public void setGrade(double grade) {
         if (grade >= 0) {

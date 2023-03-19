@@ -15,4 +15,9 @@ public class Bus extends Items {
         return "Bus: " + " ціна - " + getPrice() + "$" + ", модель - " + getModel() + ", виробник - " + getMakes() + ", країна виробник - " + getMadeCountry()
                 + ", максимальна швидкість - " + getMaxSpeed() + ", кількість поверхів - " + numberOfFloors;
     }
+
+    @Override
+    public void electricity() {
+
+    }
 }
