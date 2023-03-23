@@ -1,16 +1,13 @@
 package com.hillel.lessons.lesson12.main;
 
 import com.hillel.lessons.lesson12.enams.ColorOfWine;
-import com.hillel.lessons.lesson12.shop.Beer;
-import com.hillel.lessons.lesson12.shop.Schampu;
-import com.hillel.lessons.lesson12.shop.Whiskey;
-import com.hillel.lessons.lesson12.shop.Wine;
+import com.hillel.lessons.lesson12.shop.*;
 import com.hillel.lessons.lesson12.utils.ServConst;
 import com.hillel.lessons.lesson12.utils.ServConstt;
 
 public class Main {
     public static void main(String[] args) {
-        Whiskey whiskey = new Whiskey("Viski",1, "Super", "Ukraine", 1, 9, "England");
+        Whiskey whiskey = new Whiskey("Viski",1, "Super", "Ukraine", 1, 9,"nfdjnfjng");
 //        whiskey.calculateGrade();
         System.out.println(whiskey.getGrade());
         System.out.println();

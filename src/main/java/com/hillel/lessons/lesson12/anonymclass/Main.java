@@ -14,8 +14,7 @@ public class Main {
 
         Beer beer = new Beer("beer", 700,"nice design2", "Ukr",10,"white");
 
-        Whiskey whiskey = new Whiskey("Visky", 1,"new design", "Ukr",11,23,
-                "TYPE viski");
+        Whiskey whiskey = new Whiskey("Visky", 1,"new design", "Ukr",11,23,"jkjkj");
         printDesign(bottleProduct);
         printDesign(beer);
         printDesign(whiskey);

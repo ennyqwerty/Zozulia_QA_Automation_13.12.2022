@@ -1,4 +1,4 @@
-package com.hillel.lessons.lesson16;
+package com.hillel.lessons.lesson16.collections.listcollection;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
