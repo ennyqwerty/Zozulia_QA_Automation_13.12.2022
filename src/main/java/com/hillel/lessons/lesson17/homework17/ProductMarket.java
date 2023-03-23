@@ -11,25 +11,25 @@ public class ProductMarket {
         this.products = products;
     }
 
-    public String getAllNames() {
+    public List<String> getAllNames() {
         List<String> productsNameList = new ArrayList<>();
         for (Product product : products) {
             productsNameList.add(product.getName());
         }
-        return productsNameList.toString();
+        return productsNameList;
     }
 
-    public String getAllNameToAlphabet() {
+    public List <String> getAllNameToAlphabet() {
         List<String> productsNameList = new ArrayList<>();
 
         for (Product product : products) {
             productsNameList.add(product.getName());
         }
         Collections.sort(productsNameList);
-        return productsNameList.toString();
+        return productsNameList;
     }
 
-    public String pricesMore(int price) {
+    public List<Double> pricesMore(int price) {
         List<Double> sortPrices = new ArrayList<>();
 
         for (Product product : products) {
@@ -37,10 +37,10 @@ public class ProductMarket {
                 sortPrices.add(product.getPrice());
             }
         }
-        return sortPrices.toString();
+        return sortPrices;
     }
 
-    public String pricesLess(int price) {
+    public List<Double> pricesLess(int price) {
         List<Double> sortPrices = new ArrayList<>();
 
         for (Product product : products) {
@@ -48,15 +48,16 @@ public class ProductMarket {
                 sortPrices.add(product.getPrice());
             }
         }
-        return sortPrices.toString();
+        return sortPrices;
     }
 
-    public String allPrices() {
-        List<Double> allPrices = new ArrayList<>();
+    public List<String> allPrices() {
+        List<String> allPrice = new ArrayList<>();
         for (Product product : products) {
-            allPrices.add(product.getPrice());
+            String priceToString = Double.toString(product.getPrice());
+            allPrice.add(priceToString);
         }
-        return allPrices.toString();
+        return allPrice;
     }
 
 
